@@ -1,6 +1,6 @@
 # Site settings
 title: '🍰'
-baseurl: 
+baseurl: "/blog"
 url: "http://ameena.me"
 
 # Build settings
