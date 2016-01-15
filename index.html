@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="home">
+	<section>
+		<h4>hi!</h4>
+		<p>blog blog blog. 
+			<div class="imagegrid">
+				<img src="/images/image.png"/>
+			</div>
+		</p>
+	</section>
+	<section>
+		<h4>posts</h4>
+		<ul class="post-list">
+			{% for post in site.posts limit:5 %}
+			<li>
+				<span>{{ post.date | date: "%b %d, %Y" }}</span>
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<p><a href="{{ "/archives/" | prepend: site.baseurl }}">view more...</a></p>
+	</section>
+</div>

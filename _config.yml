@@ -1,0 +1,22 @@
+# Site settings
+title: '🍰'
+baseurl: 
+url: "http://ameena.me"
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink: pretty
+
+# Third-party services
+# just leave someone empty to disable it
+google_analytics: 
+disqus_shortname: 
+
+gallerytag:
+    dir: images
+    url: /images/galleries
+    thumb_width: 150
+    thumb_height: 150
+    columns: 4
